@@ -1,4 +1,4 @@
-# 📝 Advanced To-Do List Application
+# 📝To-Do List Application
 
 A feature-rich, object-oriented to-do list application with persistent storage, priority management, due dates, and data export/import capabilities.
 
