@@ -153,6 +153,3 @@ ID,Description,Priority,Due Date,Completed,Created At
 - [ ] Calendar view
 - [ ] Cloud sync
 - [ ] Mobile app version
-
-
-**Built with ❤️ using vanilla JavaScript, HTML5, and CSS3**
