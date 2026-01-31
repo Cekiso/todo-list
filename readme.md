@@ -154,10 +154,5 @@ ID,Description,Priority,Due Date,Completed,Created At
 - [ ] Cloud sync
 - [ ] Mobile app version
 
-## 📝 License
-
-Free to use and modify for personal or educational purposes.
-
----
 
 **Built with ❤️ using vanilla JavaScript, HTML5, and CSS3**
