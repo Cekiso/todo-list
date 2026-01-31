@@ -1,0 +1,11 @@
+How to make a to-do list CV-worthy 
+
+If you do a to-do list, add at least 2–3 upgrades:
+
+✅ Save tasks to a file (JSON / CSV)
+✅ Mark tasks as done / pending
+✅ Due dates & priority levels
+✅ Command-line menu or simple GUI
+✅ Object-oriented design (Task, ToDoList classes)
+
+That turns it from basic → interesting.

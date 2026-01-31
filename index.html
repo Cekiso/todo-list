@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Advanced To-Do List</title>
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <h2>To-Do List 📝</h2>
+            
+            <!-- Add Task Form -->
+            <div class="add-task-section">
+                <input type="text" id="input-box" placeholder="Enter task description...">
+                
+                <div class="task-options">
+                    <div class="option-group">
+                        <label for="priority">Priority:</label>
+                        <select id="priority">
+                            <option value="low">Low</option>
+                            <option value="medium" selected>Medium</option>
+                            <option value="high">High</option>
+                        </select>
+                    </div>
+                    
+                    <div class="option-group">
+                        <label for="due-date">Due Date:</label>
+                        <input type="date" id="due-date">
+                    </div>
+                </div>
+                
+                <button onclick="todoList.addTask()" class="add-btn">Add Task</button>
+            </div>
+
+            <!-- Filter and Actions -->
+            <div class="controls">
+                <div class="filter-section">
+                    <button onclick="todoList.filterTasks('all')" class="filter-btn active" data-filter="all">All</button>
+                    <button onclick="todoList.filterTasks('pending')" class="filter-btn" data-filter="pending">Pending</button>
+                    <button onclick="todoList.filterTasks('completed')" class="filter-btn" data-filter="completed">Completed</button>
+                </div>
+                
+                <div class="action-buttons">
+                    <button onclick="todoList.exportToJSON()" class="export-btn">Export JSON</button>
+                    <button onclick="todoList.exportToCSV()" class="export-btn">Export CSV</button>
+                    <button onclick="document.getElementById('import-file').click()" class="import-btn">Import</button>
+                    <input type="file" id="import-file" accept=".json,.csv" style="display: none;" onchange="todoList.importFile(event)">
+                </div>
+            </div>
+
+            <!-- Statistics -->
+            <div class="stats">
+                <span>Total: <strong id="total-tasks">0</strong></span>
+                <span>Pending: <strong id="pending-tasks">0</strong></span>
+                <span>Completed: <strong id="completed-tasks">0</strong></span>
+            </div>
+
+            <!-- Task List -->
+            <ul id="tasklist"></ul>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
