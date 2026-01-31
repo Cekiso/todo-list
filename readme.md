@@ -45,45 +45,7 @@ A feature-rich, object-oriented to-do list application with persistent storage, 
   - ToDoList class for managing collections
   - LocalStorage API for persistence
   - File API for import/export
-
-### Object-Oriented Design
-
-```javascript
-// Task Class
-class Task {
-    - id: unique identifier
-    - description: task text
-    - priority: 'low' | 'medium' | 'high'
-    - dueDate: optional deadline
-    - completed: boolean status
-    - createdAt: timestamp
     
-    Methods:
-    - toggle(): switch completion status
-    - isOverdue(): check if past due date
-    - getDaysUntilDue(): calculate remaining time
-    - toJSON(): export format
-    - fromJSON(): import format
-}
-
-// ToDoList Class
-class ToDoList {
-    - tasks[]: array of Task objects
-    - currentFilter: active filter state
-    
-    Methods:
-    - addTask(): create new task
-    - deleteTask(id): remove task
-    - toggleTask(id): mark done/pending
-    - filterTasks(filter): show filtered view
-    - exportToJSON(): download JSON file
-    - exportToCSV(): download CSV file
-    - importFile(): load from file
-    - saveToLocalStorage(): persist data
-    - render(): update UI
-}
-```
-
 ## 🚀 How to Use
 
 ### Adding a Task
